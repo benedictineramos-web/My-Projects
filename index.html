@@ -10,12 +10,15 @@
             margin: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            background-color: #f8f6ff;
+            color: #444;
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background-color: #e6e6fa;
+            color: #483d8b;
             padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         nav {
@@ -31,20 +34,31 @@
         }
 
         nav a {
-            color: white;
+            color: #483d8b;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #9370db;
         }
 
         .hero {
-            background-color: #f4f4f4;
+            background-color: #e6e6fa;
             padding: 4rem 2rem;
             text-align: center;
+            color: #483d8b;
         }
 
         section {
             padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .skills-grid {
@@ -55,10 +69,59 @@
         }
 
         .skill-card {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            border-radius: 5px;
+            background-color: #f0e6ff;
+            padding: 1.5rem;
+            border-radius: 8px;
             text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid #e6e6fa;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Resume section styles */
+        .resume-contact {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #f0e6ff;
+            border-radius: 8px;
+        }
+
+        .resume-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-left: 4px solid #e6e6fa;
+        }
+
+        .resume-section h4 {
+            color: #483d8b;
+            margin-bottom: 1rem;
+        }
+
+        .resume-section h5 {
+            color: #6a5acd;
+            margin-top: 1.5rem;
+        }
+
+        .resume-section ul {
+            list-style-type: square;
+            color: #666;
+        }
+
+        .resume-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-section a {
+            color: #9370db;
+            text-decoration: none;
+        }
+
+        .resume-section a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
